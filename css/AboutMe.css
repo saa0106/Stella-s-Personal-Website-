@@ -1,0 +1,428 @@
+body {
+    display: flex;
+    background-image: url(../Images2/Notebook\ bcg.png);
+    overflow-x: hidden;
+    /*overflow-y: hidden;*/
+    background-position: center;
+    /*background-size: cover;
+    background-size: contain;*/
+    background-size: 60%;
+}
+
+#Home {
+  transform: translateY(705px);
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+#Resume {
+  transform: translate(895px, 705px);
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+
+a {
+  text-decoration: none;
+  color: lightpink; 
+  cursor: pointer;
+
+}
+
+a:hover {
+  color: hotpink;
+  text-decoration: underline;
+}
+
+h2, h3, li {
+    font-family: 'Indie Flower', cursive;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+li {
+    font-size: 20px;
+}
+
+/*Left Page Grid*/
+.container {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 180px 230px 180px; 
+    grid-template-rows: 195px 170px 170px 170px; 
+    gap: 10px; 
+    width: 100%; 
+    margin-left: -370px;
+    margin-top: -8px;
+}
+
+.item0 {
+    grid-column: 1 / 4; 
+    grid-row: 1 / 2; 
+}
+
+.item1 { 
+    grid-column: 1 / 2; 
+    grid-row: 2 / 3; 
+} 
+
+.item2 { 
+    grid-column: 2 / 3; 
+    grid-row: 2 / 3; 
+} 
+
+.item3 { 
+    grid-column: 3 / 4; 
+    grid-row: 2 / 3; 
+} 
+
+.item4 { 
+    grid-column: 1 / 2; 
+    grid-row: 3 / 4; 
+}
+
+.item5 { 
+    grid-column: 2 / 3; 
+    grid-row: 3 / 4; 
+}
+
+.item6 { 
+    grid-column: 3 / 4; 
+    grid-row: 3 / 4;
+}
+
+.item7 { 
+    grid-column: 1 / 2; 
+    grid-row: 4 / 5;
+}
+
+.item8 { 
+    grid-column: 2 / 3; 
+    grid-row: 4 / 5;
+}
+
+.item9 { 
+    grid-column: 3 / 4; 
+    grid-row: 4 / 5;
+}
+
+.grid-image0, .grid-image1, .grid-image2, .grid-image3, .grid-image4, .grid-image5, .grid-image6, .grid-image7, .grid-image8, .grid-image9 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+  cursor: pointer;
+}
+
+/*Left Page Stickers*/
+#starp_sticker {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    transform: translate(100px, 600px);
+}
+
+#books_sticker {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    transform: translate(460px, -500px);
+}
+
+#camera_sticker {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    transform: translate(30px, 275px);
+}
+
+#bow_sticker {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    transform: translate(185px, 425px);
+}
+
+#stamp_sticker {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    transform: translate(460px, 610px);
+}
+
+#camera_sticker, #books_sticker, #bow_sticker, #starp_sticker, #stamp_sticker {
+  pointer-events: none;
+}
+
+/*Popup*/
+.grid-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(3px);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#grid-popup-content {
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+/*Right Page Grid*/
+.container2 {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto; 
+    grid-template-rows: auto auto; 
+    gap: 15px; 
+    margin-left: 315px;
+    height: 100%;
+}
+
+.item10 {
+    grid-column: 1 / 3; 
+    background-image: url(../Images2/about\ me.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 170px;
+    width: 46vw;
+    margin-top: -15px;
+}
+
+.item11 {
+    background-color: lightcoral;
+    height: 250px; 
+    width: 245px;
+}
+
+.item12 {
+    background-color: rgb(209, 251, 189);
+    height: 300px;
+    width: 320px;
+}
+
+.item13 {
+    background-color: lightskyblue;
+    margin-top: -30px;
+    height: 300px;
+    width: 245px;
+}
+
+.item14 {
+    background-color: lightgoldenrodyellow;
+    height: 235px;
+    width: 330px;
+}
+
+.item11, .item12, .item13, .item14 {
+    box-shadow: 2px 2px 10px rgb(128, 128, 128);
+}
+
+#Code, #CL, #Comm, #C, #CT, #T {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+#Code::before {
+    content: "";
+    background: url('../Images2/code.png') no-repeat center/cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+#CL::before {
+    content: "";
+    background: url('../Images2/cursor.png') no-repeat center/cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+#Comm::before {
+    content: "";
+    background: url('../Images2/textbubble.png') no-repeat center/cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+#C::before {
+    content: "";
+    background: url('../Images2/palette.png') no-repeat center/cover;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-left: -5px;
+}
+
+#CT::before {
+    content: "";
+    background: url('../Images2/lightbulb.png') no-repeat center/cover;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-left: -5px;
+}
+
+#T::before {
+    content: "";
+    background: url('../Images2/team.png') no-repeat center/cover;
+    width: 30px;
+    height: 30px;
+    margin-left: -5px;
+}
+
+/*Right Page Stickers*/
+#crown_tape {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    transform: translate(50px, 100px);
+}
+
+#heart_tape {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    transform: translate(-225px, 210px);
+}
+
+#purple_tape {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    transform: translate(30px, 170px);
+}
+
+#star_tape {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    transform: translate(90px, -75px);
+}
+
+#book_sticker {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    transform: translate(90px, -270px);
+}
+
+#star_sticker {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    transform: translate(-180px, 30px);
+}
+
+#headphone_sticker {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    transform: translate(165px, 595px);
+}
+
+#wow_sticker {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    transform: translate(190px, 80px);
+}
+
+
+/*Progress Bar*/
+.progress-bar {
+  background: #ffe6f2; /* light pink background */
+  border-radius: 12px;
+  overflow: hidden;
+  height: 8px;
+  width: 30%;
+  margin-top: 8px;
+  border: 2px solid #ffb6c1;
+  box-shadow: 0 0 6px #ffc0cb, 0 0 10px #ffccff inset;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #ffc8dd, #ffafcc, #bde0fe);
+  transition: width 1.5s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0 0 4px #ff9aa2;
+}
+
+/* Popup overlay */
+#popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+/* Popup box */
+.popup-box {
+  background-color: #fff0fa;
+  border: 2px solid #ffa5d8;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  color: #333;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#popup-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#hobby-list li:hover {
+  cursor: pointer;
+  color: #ff69b4;
+}
+
+.hidden {
+  display: none !important;
+}
+
+

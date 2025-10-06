@@ -1,0 +1,188 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../Images3/windows\ 98\ bcg.jpg);
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+
+.xp-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg,#0997ff,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    overflow-x: hidden;
+}
+
+.start-button {
+    position: fixed;
+    display: flex;
+    margin: -10px;
+}
+
+.time {
+    height: 100%;
+    float: right;
+    font-family: calibri, monospace;
+    font-size: 14px;
+    line-height: 14px;
+    background: linear-gradient(to bottom, #1290E9 0%, #19B9F3 9%, #1290E9 18%, #1290E9 92%, #1941A5 100%);
+    background-position: center/cover; 
+    background-repeat: no-repeat;
+    box-shadow: 0px 5px 10px #14A5F0 inset, 0px 5px 10px #333333;
+    padding: 9px 15px 9px 25px;
+    border-left: 1px solid #092E51;
+    text-shadow: 1px 1px 2px #222;
+    text-transform: uppercase;
+}
+
+.tab {
+    position: relative;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 30px;
+    top: 1.5px;
+    left: 99px;
+    transform: translateY(0);
+}
+
+.tab span {
+    position: absolute; /* Position the text on top of the image */
+    color: white; /* Adjust text color */
+    font-size: 12px; /* Adjust text size */
+    font-family: Arial, sans-serif; /* Choose font */
+    position: left;
+}
+
+#notepadIcon {
+    cursor: pointer;
+}
+
+#folder{
+    position: fixed;
+    height: 25px;
+    width: 25px;
+    left: 5px;
+}
+
+.desktop-icons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5%;
+    left: 10px;
+}
+
+.icon {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.icon p {
+    margin-top: 5px;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.icon img {
+    width: 30px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color:white;
+}
+
+
+.window {
+    width: 400px;
+    background: #ffffff;
+    border: 2px solid #808080;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+}
+
+.window-content {
+    padding: 10px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+}
+
+.table th {
+    background: #c0c0c0;
+    border: 2px solid #808080;
+    padding: 8px;
+    text-align: left;
+}
+
+.table td {
+    border: 1px solid #808080;
+    padding: 8px;
+    text-align: left;
+}
+
+.table tr:nth-child(even) {
+    background: #e0e0e0; 
+}
+
+.table tr:hover {
+    background: #b5d5ff;
+}
+
+#closePopup {
+    background: red;
+}
+
+#closePopup:hover {
+    background: darkred;
+}
+
+#likeBtn {
+    background: linear-gradient(to bottom, #f0f0f0, #c0d9ff);
+    border: 2px solid #4a76a8;
+    padding: 8px 20px;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: inset -1px -1px 0 #ffffff, inset 1px 1px 0 #a0a0a0;
+    text-shadow: 1px 1px 0 #fff;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+#likeBtn:hover {
+    background: linear-gradient(to bottom, #e0eaff, #a8cfff);
+}
+
+#likeBtn:active {
+    background: linear-gradient(to bottom, #a8cfff, #e0eaff);
+    box-shadow: inset 1px 1px 1px #ffffff, inset -1px -1px 1px #a0a0a0;
+}
+
