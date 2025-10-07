@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/MyJourney.css">
+    <title>My Journey</title>
+</head>
+<body>
+    <audio id="startup-sound" src="Images3/Microsoft Windows XP Startup Sound.mp3"></audio>
+
+    <main>
+    <div class="desktop-icons">
+        <div class="icon">
+            <img src="Images3/network.png" alt="Computer"><p>Stella's Computer</p>
+        </div>
+
+    <div class="icon">
+        <img src="Images3/ie.png" alt="Internet"><p>Internet</p>
+    </div>
+
+    <div id="notepadIcon" class="icon">
+        <img src="Images3/notepad.png" alt="Notepad"><p>Notepad</p>
+    </div>
+
+    <div class="icon">
+        <a href="Homepage.html" alt="Home Page">
+        <img src="Images3/folder.png"><p>Homepage</p>
+        </a>
+    </div>
+
+    <div class="icon">
+        <a href="AboutMe.html" alt="About Me">
+        <img src="Images3/folder.png"><p>About Me</p>
+        </a>
+    </div>
+
+    <div class="icon">
+        <img src="Images3/recycle.png" alt="Recycle Bin"><p>Recycle Bin</p>
+    </div>
+</div>
+
+        <div id="tablePopup" class="window" style="display: none;"> 
+        <div class="window-content">
+            <button id="closePopup" style="float: right;">X</button>
+
+            <table class="table">
+             <thead>
+                <tr>
+                       <th id="sortYear">Year</th>
+                       <th id="sortInstitution">Institution/Company</th>
+                       <th>Description</th>
+                </tr>
+             </thead>
+
+             <tbody id="tableBody">
+
+               <!---- <tr>
+                    <td>2018-2022</td>
+                    <td>Milford Mill Academy</td>
+                    <td>Graduated as Salutatorian</td>
+                </tr>
+
+                <tr>
+                    <td>2021-2022</td>
+                    <td>National Technical Honors Society</td>
+                    <td>Secretary</td>
+                </tr>
+
+                <tr>
+                    <td>2021-Present</td>
+                    <td>HKBC</td>
+                    <td>Media Team VP</td>
+                </tr>
+
+                <tr>
+                    <td>2023-Present</td>
+                    <td>McDaniel College Football</td>
+                    <td>Photographer/PR Member</td>
+                </tr>
+
+                <tr>
+                    <td>2022-2026</td>
+                    <td>McDaniel College</td>
+                    <td>*Currently enrolled*</td>
+                </tr>-->
+             </tbody>
+            </table>
+
+            <div style="margin-top: 20px; text-align: center;">
+                <button id="likeBtn">👍 Like My Resume</button>
+                <p id="likeCount">0 Likes</p>
+            </div>
+
+        </div>
+    </div>
+
+    </main>
+
+    <footer class="xp-footer">
+        <div class="start-button"><img src="Images3/windows start.png" alt="Start"></div>
+        <div class= "tab"><img src="Images3/btn3.png"><img id="folder" src="Images3/folder.png"><span>My Journey</span></div>
+         <div class="time">2:40 PM</div>
+    </footer>
+
+    <script src="js/MyJourney.js"></script>
+    
+
+</body>
+</html>
