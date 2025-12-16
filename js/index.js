@@ -46,15 +46,15 @@ function asideGame() {
   <h1>🎮 2 Truths & a Lie</h1>
   <p id="ttl">Can you guess the lie?</p>
   <ul id="truthGame">
-    <li onclick="checkAnswer(this, false)">
+    <li onclick="checkAnswer(this, true)">
       <img class="game-img" src="images/baby me.jpg" alt="bbyme">
       ⚡ I got me and my mom electrocuted when I was a baby.
     </li>
-    <li onclick="checkAnswer(this, false)">
+    <li onclick="checkAnswer(this, true)">
       <img class="game-img" src="images/african beach.jpg" alt="africa">
       🏊🏾 I don't know how to swim.
     </li>
-    <li onclick="checkAnswer(this, true)">
+    <li onclick="checkAnswer(this, false)">
       <img class="game-img" src="images/18 bday.jpg" alt="bday">
       👨🏿‍👩🏾‍👧🏾‍👦🏿 I have 8 siblings.
     </li>
@@ -124,3 +124,4 @@ function pauseMusic() {
   audio.pause();
 }
   
+
