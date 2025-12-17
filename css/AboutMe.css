@@ -52,7 +52,7 @@ li {
 
 /*Left Page Grid*/
 .container {
-    /*position: absolute;*/
+    position: absolute;
     display: grid;
     grid-template-columns: 180px 230px 180px;
     grid-template-rows: 195px 170px 170px 170px;
@@ -427,6 +427,7 @@ li {
 .hidden {
   display: none !important;
 }
+
 
 
 
