@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     { year: "2021-Present", institution: "HKBC", description: "Media Team" },
     { year: "2023-Present", institution: "McDaniel College Football", description: "Photographer/PR Member" },
     { year: "2025-Present", institution: "McDaniel College IT Help Desk", description: "Student Assistant" },
+    { year: "2025-Present", institution: "Women 2 Women STEM", description: "Student Member/Mentee" },
     { year: "2022-2026", institution: "McDaniel College", description: "*Currently enrolled*" }
   ];
 
@@ -93,3 +94,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 });
+
