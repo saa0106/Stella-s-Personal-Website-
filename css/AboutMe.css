@@ -52,11 +52,11 @@ li {
 
 /*Left Page Grid*/
 .container {
-    position: absolute;
+    /*position: absolute;*/
     display: grid;
-    grid-template-columns: 180px 230px 180px; 
-    grid-template-rows: 195px 170px 170px 170px; 
-    gap: 10px; 
+    grid-template-columns: /*180px 230px 180px;*/
+    grid-template-rows: /*195px 170px 170px 170px;*/
+    gap: 15px; 
     width: 100%; 
     margin-left: -370px;
     margin-top: -8px;
@@ -190,13 +190,21 @@ li {
 
 /*Right Page Grid*/
 .container2 {
-    position: absolute;
+    /*position: absolute;*/
     display: grid;
-    grid-template-columns: auto auto; 
+    grid-template-columns: /*auto auto;*/ repeat(2, 1fr);
     grid-template-rows: auto auto; 
     gap: 15px; 
-    margin-left: 315px;
+    margin-left: /*315px;*/
     height: 100%;
+    max-width: 1200 px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+@media (max-width: 768px) {
+    .container2 {
+        grid-template-columns: 1fr;
+    }
 }
 
 .item10 {
@@ -424,5 +432,6 @@ li {
 .hidden {
   display: none !important;
 }
+
 
 
