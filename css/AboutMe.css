@@ -2,10 +2,10 @@ body {
     display: flex;
     background-image: url(../Images2/Notebook\ bcg.png);
     overflow-x: hidden;
-    /*overflow-y: hidden;*/
+    overflow-y: hidden;
     background-position: center;
-    /*background-size: cover;
-    background-size: contain;*/
+    background-size: cover;
+    background-size: contain;
     background-size: 60%;
 }
 
@@ -54,8 +54,8 @@ li {
 .container {
     /*position: absolute;*/
     display: grid;
-    grid-template-columns: /*180px 230px 180px;*/
-    grid-template-rows: /*195px 170px 170px 170px;*/
+    grid-template-columns: 180px 230px 180px;
+    grid-template-rows: 195px 170px 170px 170px;
     gap: 15px; 
     width: 100%; 
     margin-left: -370px;
@@ -432,6 +432,7 @@ li {
 .hidden {
   display: none !important;
 }
+
 
 
 
