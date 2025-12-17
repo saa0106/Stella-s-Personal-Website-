@@ -197,14 +197,9 @@ li {
     gap: 15px; 
     margin-left: 315px;
     height: 100%;
-    max-width: 1200 px;
+    /*max-width: 1200 px;
     margin: 0 auto;
-    padding: 0 15px;
-}
-@media (max-width: 768px) {
-    .container2 {
-        grid-template-columns: 1fr;
-    }
+    padding: 0 15px;*/
 }
 
 .item10 {
@@ -432,6 +427,7 @@ li {
 .hidden {
   display: none !important;
 }
+
 
 
 
