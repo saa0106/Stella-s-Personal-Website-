@@ -47,15 +47,15 @@ function asideGame() {
   <p id="ttl">Can you guess the lie?</p>
   <ul id="truthGame">
     <li onclick="checkAnswer(this, true)">
-      <img class="game-img" src="images/baby me.jpg" alt="bbyme">
+      <img class="game-img" src="Images/baby me.jpg" alt="bbyme">
       ⚡ I got me and my mom electrocuted when I was a baby.
     </li>
     <li onclick="checkAnswer(this, true)">
-      <img class="game-img" src="images/african beach.jpg" alt="africa">
+      <img class="game-img" src="Images/african beach.jpg" alt="africa">
       🏊🏾 I don't know how to swim.
     </li>
     <li onclick="checkAnswer(this, false)">
-      <img class="game-img" src="images/18 bday.jpg" alt="bday">
+      <img class="game-img" src="Images/18 bday.jpg" alt="bday">
       👨🏿‍👩🏾‍👧🏾‍👦🏿 I have 8 siblings.
     </li>
   </ul>
@@ -66,15 +66,15 @@ function asideGame() {
   function asideGallery() {
     return `
        <div class="ahead">
-    <img id="star" src="images/Star2.png" alt="Star"> 
+    <img id="star" src="Images/Star2.png" alt="Star"> 
   </div>
   <div class="category">
-    <img src="images/Togo 🇹🇬.jpg" alt="Togo">
+    <img src="Images/Togo 🇹🇬.jpg" alt="Togo">
     <br>
-    <div class="c2"><img src="images/music player.png" alt="Music player"></div>
+    <div class="c2"><img src="Images/music player.png" alt="Music player"></div>
   </div>
   <div class="category">
-    <img src="images/captaincold.jpg" alt="CC">
+    <img src="Images/captaincold.jpg" alt="CC">
     <div>
       <h5 id="sq">"Make the Plan. Execute the Plan. 
       Expect the Plans to go off the rails. 
@@ -82,9 +82,9 @@ function asideGame() {
     </div>
   </div>
   <div class="category">
-    <img src="images/makeup.jpg" alt="beauty">
+    <img src="Images/makeup.jpg" alt="beauty">
     <br>
-    <div class="c3"><img src="images/barcode2.png" alt="Barcode"></div>
+    <div class="c3"><img src="Images/barcode2.png" alt="Barcode"></div>
   </div>
     `;
   }
@@ -94,9 +94,9 @@ function asideGame() {
       <div class="aside-section">
         <h1>💖 Daily Boost</h1>
         <p class="aside-text">“You’re like, really pretty.   ” <b>-Regina George</b></p>
-        <img id="rg" src="images/regina.jpg" alt="Regina George">
-        <img id="rg" src="images/M&M.jpg" alt="M&M">
-        <img id="rg" src="images/Ayra Starr.jpg" alt="Ayra Starr">
+        <img id="rg" src="Images/regina.jpg" alt="Regina George">
+        <img id="rg" src="Images/M&M.jpg" alt="M&M">
+        <img id="rg" src="Images/Ayra Starr.jpg" alt="Ayra Starr">
         
       </div>
     `;
@@ -124,4 +124,5 @@ function pauseMusic() {
   audio.pause();
 }
   
+
 
