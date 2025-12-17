@@ -3,8 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const tableData = [
     { year: "2018-2022", institution: "Milford Mill Academy", description: "Graduated as Salutatorian" },
     { year: "2021-2022", institution: "National Technical Honors Society", description: "Secretary" },
-    { year: "2021-Present", institution: "HKBC", description: "Media Team VP" },
+    { year: "2021-Present", institution: "HKBC", description: "Media Team" },
     { year: "2023-Present", institution: "McDaniel College Football", description: "Photographer/PR Member" },
+    { year: "2025-Present", institution: "McDaniel College IT Help Desk", description: "Student Assistant" },
     { year: "2022-2026", institution: "McDaniel College", description: "*Currently enrolled*" }
   ];
 
@@ -89,5 +90,6 @@ document.addEventListener("DOMContentLoaded", function() {
   closeBtn.addEventListener("click", () => {
     tablePopup.style.display = "none";
   });
+
 
 });
